@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<issf_list>
+  <meta_file>
+    <timestamp_created>2026-03-08 14:00</timestamp_created>
+    <filename>Q10000AII0308260000.1.AR60.0.001</filename>
+    <creator>SiusRank</creator>
+  </meta_file>
+  <meta_champship>
+    <id>101</id>
+    <type>National</type>
+    <champshipname>TEST CHAMPIONSHIP 2026</champshipname>
+    <city>Delhi</city>
+    <country>IND</country>
+    <startdate>2026-03-08</startdate>
+    <enddate>2026-03-08</enddate>
+    <timezone>IST</timezone>
+    <disciplines>AR60</disciplines>
+  </meta_champship>
+  <meta_list>
+    <phase>QUALIFICATION</phase>
+    <category>1</category>
+    <group>A</group>
+    <event>AR60</event>
+    <relay>01</relay>
+    <stage>01</stage>
+    <sorting>A</sorting>
+    <kind>I</kind>
+    <status>I</status>
+    <timestamp_competition>2026-03-08 14:00</timestamp_competition>
+    <version>001</version>
+  </meta_list>
+  <entries>
+    <entry>
+      <issf_id>1001</issf_id>
+      <bib>101</bib>
+      <family_name>SHARMA</family_name>
+      <first_name>RAHUL</first_name>
+      <noc>ARMY</noc>
+      <fp>1</fp>
+      <relay>1</relay>
+      <starttime>14:00</starttime>
+      <tot_comp>625.4</tot_comp>
+      <rec_index>1</rec_index>
+      <shot_fired>60</shot_fired>
+      <competition_shots>
+        <shot nr="1" val="10.5" />
+        <shot nr="2" val="10.3" />
+        <shot nr="3" val="10.7" />
+        <shot nr="4" val="9.8" />
+        <shot nr="5" val="10.1" />
+        <shot nr="6" val="10.4" />
+        <shot nr="7" val="10.2" />
+        <shot nr="8" val="10.6" />
+        <shot nr="9" val="9.9" />
+        <shot nr="10" val="10.0" />
+      </competition_shots>
+    </entry>
+    <entry>
+      <issf_id>1002</issf_id>
+      <bib>102</bib>
+      <family_name>KUMAR</family_name>
+      <first_name>AMIT</first_name>
+      <noc>NAVY</noc>
+      <fp>2</fp>
+      <relay>1</relay>
+      <starttime>14:00</starttime>
+      <tot_comp>621.8</tot_comp>
+      <rec_index>2</rec_index>
+      <shot_fired>60</shot_fired>
+      <competition_shots>
+        <shot nr="1" val="10.2" />
+        <shot nr="2" val="10.0" />
+        <shot nr="3" val="10.4" />
+        <shot nr="4" val="10.1" />
+        <shot nr="5" val="9.7" />
+        <shot nr="6" val="10.3" />
+        <shot nr="7" val="10.5" />
+        <shot nr="8" val="9.9" />
+        <shot nr="9" val="10.0" />
+        <shot nr="10" val="10.2" />
+      </competition_shots>
+    </entry>
+    <entry>
+      <issf_id>1003</issf_id>
+      <bib>103</bib>
+      <family_name>SINGH</family_name>
+      <first_name>PRIYA</first_name>
+      <noc>CRPF</noc>
+      <fp>3</fp>
+      <relay>1</relay>
+      <starttime>14:00</starttime>
+      <tot_comp>618.2</tot_comp>
+      <rec_index>3</rec_index>
+      <shot_fired>60</shot_fired>
+      <competition_shots>
+        <shot nr="1" val="10.1" />
+        <shot nr="2" val="9.8" />
+        <shot nr="3" val="10.3" />
+        <shot nr="4" val="10.0" />
+        <shot nr="5" val="10.2" />
+        <shot nr="6" val="9.6" />
+        <shot nr="7" val="10.4" />
+        <shot nr="8" val="10.1" />
+        <shot nr="9" val="10.0" />
+        <shot nr="10" val="9.9" />
+      </competition_shots>
+    </entry>
+  </entries>
+</issf_list>

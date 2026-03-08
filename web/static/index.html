@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sius Escor — Live Scoreboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <div class="logo">Sius<span>Escor</span></div>
+      <div class="header-badge">Live Scoreboard</div>
+    </div>
+    <div class="header-right">
+      <div class="live-indicator" id="live-dot">
+        <span class="live-dot"></span>
+        <span class="live-text">LIVE</span>
+      </div>
+      <div class="header-badge" id="auto-refresh">Auto-refresh: 5s</div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <div class="main">
+
+    <!-- Race Banner -->
+    <section class="race-banner" id="race-banner" style="display:none;">
+      <div class="race-banner-content">
+        <h1 id="race-title">—</h1>
+        <div class="race-meta">
+          <span class="meta-chip" id="race-event"></span>
+          <span class="meta-chip" id="race-phase"></span>
+          <span class="meta-chip" id="race-city"></span>
+          <span class="meta-chip" id="race-date"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Cards -->
+    <section class="stats-grid" id="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">Athletes</div>
+        <div class="stat-value" id="stat-athletes">—</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Shots Recorded</div>
+        <div class="stat-value" id="stat-shots">—</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Average Score</div>
+        <div class="stat-value" id="stat-avg">—</div>
+      </div>
+      <div class="stat-card stat-card-accent">
+        <div class="stat-label">Leading Athlete</div>
+        <div class="stat-value" id="stat-leader">—</div>
+        <div class="stat-sub" id="stat-leader-score"></div>
+      </div>
+    </section>
+
+    <!-- Leaderboard -->
+    <section class="panel">
+      <div class="panel-header">
+        <h2>Leaderboard</h2>
+        <span id="driver-count"></span>
+      </div>
+      <div class="table-wrap">
+        <table class="leaderboard-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Bib</th>
+              <th>Athlete</th>
+              <th>Team</th>
+              <th>Shots Fired</th>
+              <th>Total Score</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="leaderboard-body">
+            <tr>
+              <td colspan="7" class="empty-cell">Waiting for data...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Shot Detail Modal (inline expand) -->
+    <section class="panel" id="shot-panel" style="display:none;">
+      <div class="panel-header">
+        <h2 id="shot-panel-title">Shot Details</h2>
+        <button class="btn btn-sm btn-outline" onclick="closeShotPanel()">Close</button>
+      </div>
+      <div class="shot-grid" id="shot-grid"></div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span>Sius Escor v2.0 — Powered by FastAPI + SQLite</span>
+    <span>Data refreshes every 5 seconds</span>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
